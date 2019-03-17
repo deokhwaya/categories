@@ -14,17 +14,24 @@
 
     </head>
     <body>
-
-                  
-        <div class="container">
-          <div class="site">
-            <div class="header">
+    
+    <div class="container" >
+    	<div id="archives">browse by
+    		<a title="The complete archive of {{ site.name }}'s Blog by category"
+                href="{{ site.url}}{{ site.baseurl }}/categoryview">category</a>
+    	</div>
+	</div>
+        
+    <div class="container">
+	    <div class="site">
+    	    <div class="header">
               <h1 class="title"><a href="/">{{ site.name }}</a></h1>
               <a class="extra" href="/categories">home</a>
               <a href="{{site.baseurl}}/about">About</a>
               <a class="extra" href="/categories/study">study</a>
               <a href="{{site.baseurl}}/portfolio">Portfolio</a>              
-              <a class="extra" href="/categories/daily">daily</a><br />
+              <a class="extra" href="/categories/daily">daily</a>
+              <a class="extra" href="/categories/categoryview">category</a><br />
             </div>
 
                 {{ content }}
