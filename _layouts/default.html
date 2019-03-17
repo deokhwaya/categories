@@ -1,50 +1,47 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
-<head>
-    {% include head.html %}
-</head>
-<body>
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="container animated fadeIn">
-            <div class="row">
-                    <a href="{{ site.url }}">
-                        <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
-                    </a>
-                    <h3 class="title">
-                        <a class="zoombtn" href="{{ site.url }}">
-                        	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
-			            </a>
-                    </h3>
-                    <hr class="hr-line">
-                    <h3 class="title">
-                        <a href="{{ site.url }}">
-                        	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
-			            </a>
-                    </h3>
-                    {% include social-links.html %}
-                  <hr class="hr-line">
-                  <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about">
-                         About
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts">
-                         Posts
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/projects">
-                         Projects
-                         </a>
-                 </h3>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+              <a class="extra" href="/">home</a>
             </div>
-        </div>
-    </header>
-    {% include scripts.html %}
-</body>
+
+                {{ content }}
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
 </html>
+
