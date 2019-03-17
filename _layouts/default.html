@@ -15,12 +15,6 @@
     </head>
     <body>
     
-    <div class="container" >
-    	<div id="archives">browse by
-    		<a title="The complete archive of {{ site.name }}'s Blog by category"
-                href="{{ site.url}}{{ site.baseurl }}/categoryview">category</a>
-    	</div>
-	</div>
         
     <div class="container">
 	    <div class="site">
@@ -30,29 +24,34 @@
               <a href="{{site.baseurl}}/about">About</a>
               <a class="extra" href="/categories/study">study</a>
               <a href="{{site.baseurl}}/portfolio">Portfolio</a>              
-              <a class="extra" href="/categories/daily">daily</a>
-              <a class="extra" href="/categories/categoryview">category</a><br />
+              <a class="extra" href="/categories/daily">daily</a><br />
             </div>
 
-                {{ content }}
+	   		<div class="container" >
+	    		<div id="archives">browse by
+	    			<a title="The complete archive of {{ site.name }}'s Blog by category"
+	                	href="{{ site.url}}{{ site.baseurl }}/categoryview">category</a>
+	    		</div>
+			</div>
+			{{ content }}
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+	    	<div class="footer">
+	       		<div class="contact">
+	    	    	<p>
+	            	Your Name<br />
+	            	What You Are<br />
+	            	your@email.com
+	            	</p>
+				</div>
+				<div class="contact">
+	    		<p>
+	        	<a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+	           	<a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+	        	</p>
+				</div>
+			</div>
+		</div>
+	</div> <!-- /container -->
 
     </body>
 </html>
